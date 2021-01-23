@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvtemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Temperature"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tvsetTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/tvtemp"
+        android:text="TextView"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvwind_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvtemp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="WindSpeed"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvset_wind_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvsetTemp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="27dp"
+        android:layout_toRightOf="@+id/tvwind_speed"
+        android:text="TextView"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:onClick="getWeatherReport"
+        android:text="next" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvwind_speed"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Description"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvsetdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvset_wind_speed"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="19dp"
+        android:layout_toRightOf="@+id/tvDescription"
+        android:text="TextView"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvHumidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDescription"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Humidity"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvsetHumidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvsetdesc"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="21dp"
+        android:layout_toRightOf="@+id/tvHumidity"
+        android:text="TextView"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvPressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvHumidity"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Pressure"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvsetPressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvsetHumidity"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="26dp"
+        android:layout_toRightOf="@+id/tvPressure"
+        android:text="TextView"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvVisibility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPressure"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Visibility"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvsetvisibility"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/tvsetPressure"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="27dp"
+        android:layout_toRightOf="@+id/tvVisibility"
+        android:text="TextView"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="110dp"
+        android:foregroundGravity="center"
+        android:text="By Default delhi city weather report is showing" />
+</RelativeLayout>
